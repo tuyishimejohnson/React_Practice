@@ -10,17 +10,15 @@ const Home = () => {
               <h1 className='text-center bg-red-300 font-semibold text-4xl'>Todo Application</h1>
           </div>
 
-          <div className='bg-gray-200'>
+          <div className='bg-gray-200 py-6'>
 
             <div className='flex justify-center gap-10'>
-              <input type="text" placeholder='Add a todo' className='w-1/2 focus:outline-none'/>
-              <button id='add' className='border border-black px-4 py-2'>Add</button>
-              <button>< FontAwesomeIcon icon={faTrash} id='delete' className='text-red-400'/></button>
+              <input type="text" placeholder='Add a todo' className='w-1/2 focus:outline-none focus:ring-1 rounded-md pl-3'/>
+              <button id='add' className='border border-gray-500 rounded-full px-7 py-2 hover:text-white hover:bg-gray-500 hover:translate-x-1 transition'>Add</button>
+              <button>< FontAwesomeIcon icon={faTrash} id='delete' className='text-red-400 text-2xl hover:translate-y-1 transition'/></button>
             </div>
           </div>
       </div>
-      
-    
     </>
   )
 }
