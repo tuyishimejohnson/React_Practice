@@ -1,13 +1,14 @@
 import "./App.css";
 import "./index.css";
+import "./home.jsx"
+import Home from "./home.jsx";
 
 function App() {
+
   return (
-  <>
-    <h1 className="bg-gray-400">First react project</h1>
-    <p>Loremm</p>
-  
-  </>
+      <div>
+        < Home />
+      </div>
   );
 }
 
