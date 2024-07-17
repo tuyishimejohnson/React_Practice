@@ -1,10 +1,11 @@
-import './App.css';
+import "./App.css";
+import "./index.css";
 
 function App() {
   return (
   <>
-  
-    <p>Lorem import</p>
+    <h1 className="bg-gray-400">First react project</h1>
+    <p>Loremm</p>
   
   </>
   );
