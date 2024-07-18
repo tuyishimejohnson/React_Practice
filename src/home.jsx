@@ -19,7 +19,27 @@ const Home = () => {
           </div>
       </div>
 
+      <div>
+        <nav>
+          <img src="" alt="" />
+          <h1>ReactFacts</h1>
+        </nav>
+
+        <h1>Fun facts about React</h1>
+        <div>
+          <img src="" alt="" />
+          <p>Was first released in 2013</p>
+          <img src="" alt="" />
+          <p>Was originally created by Jordan Walke</p>
+          <img src="" alt="" />
+          <p>Has well over 100K stars on GitHub</p>
+          <img src="" alt="" />
+          <p>Is maintained by Meta</p>
+          <img src="" alt="" />
+          <p>Powers thousands of enterprise apps, including mobile apps</p>
+        </div>
         
+      </div>  
       
     </>
   )
