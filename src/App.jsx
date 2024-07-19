@@ -2,6 +2,7 @@ import "./App.css";
 import "./index.css";
 import BusinessCard from "./businessCard.jsx";
 import Navigation from "./navigation.jsx";
+import AirBnB from "./airBnB.jsx";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <div>
         < Navigation />
         < BusinessCard />
+        < AirBnB />
       </div>
   );
 }
