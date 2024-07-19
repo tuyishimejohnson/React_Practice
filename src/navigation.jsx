@@ -14,9 +14,9 @@ const Navigation = () => {
           </div>
           
           
-          <div className="body1">
-            <h1 className='text-5xl pl-8'>Fun facts about React</h1>
-            <ul className="pl-16">
+          <div className="pt-16">
+            <h1 className='text-5xl pl-8 pb-9'>Fun facts about React</h1>
+            <ul className="pl-16 flex flex-col gap-3 text-xl">
               <li>Was first released in 2013</li>
               <li>Was originally created by Jordan Walke</li>
               <li>Has well over 100K stars on GitHub</li>
