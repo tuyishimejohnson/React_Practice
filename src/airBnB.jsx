@@ -16,6 +16,53 @@ const AirBnB = () => {
                 <p>Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.
                 </p>
             </div>
+
+            <div className="flex gap-2">
+                <div>
+                    <div className="h-[75%]">
+                        <img src={require("./images/image 12.png")} alt=""  className="object-cover w-full h-full"/>
+                    </div>
+                    <div className="flex gap-3">
+                        <img src={require("./images/Star 1.png")} alt=""/>
+                        <span>5.0 (6) . USA</span>
+                    </div>
+                    <p>Life lessons with Katie Zaferes</p>
+                    <p><span className="font-bold">From $136</span> / person</p>
+                    <p>SOLD OUT</p>
+                </div>
+
+                <div>
+                        <div className="h-[75%]">
+                            <img src={require("./images/wedding-photography 1.png")} alt="" className="object-cover w-full h-full"/>
+                        </div>
+                    <div className="flex gap-3">
+                    <img src={require("./images/Star 1.png")} alt=""/>
+                        
+                        
+                        <span>5.0 (6) . USA</span>
+                    </div>
+                    <p>Life lessons with Katie Zaferes</p>
+                    <p><span className="font-bold">From $136</span> / person</p>
+                    <p>SOLD OUT</p>
+                </div>
+                <div>
+                    <div className="h-[75%]">
+                        <img src={require("./images/mountain-bike 1.png")} alt="" className="object-cover w-full h-full"/>
+                    </div>
+                    
+                    <div className="flex gap-3">
+                    
+                            <img src={require("./images/Star 1.png")} alt=""/>
+                    
+                        
+                        <span>5.0 (6) . USA</span>
+                    </div>
+                    <p>Life lessons with Katie Zaferes</p>
+                    <p><span className="font-bold">From $136</span> / person</p>
+                    <p>SOLD OUT</p>
+                </div>
+                
+            </div>
         </div>
     </>    
   )
