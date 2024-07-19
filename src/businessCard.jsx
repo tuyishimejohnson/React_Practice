@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { FaLinkedin } from 'react-icons/fa'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 const BusinessCard = () => {
   return (
@@ -19,7 +19,7 @@ const BusinessCard = () => {
 
             <div>
                 <button className='bg-white border-none px-8 py-3'><FontAwesomeIcon icon={faEnvelope} />Email</button>
-                <button className='bg-blue-400 border-none px-8 py-3'><FontAwesomeIcon icon={FaLinkedin} />LinkedIn</button>
+                <button className='bg-blue-400 border-none px-8 py-3'><FontAwesomeIcon icon={faLinkedinIn} />LinkedIn</button>
             </div>
         </div>
     </>
