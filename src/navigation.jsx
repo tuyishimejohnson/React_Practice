@@ -14,7 +14,7 @@ const Navigation = () => {
           </div>
           
           
-          <div className="pt-16">
+          <div className="pt-16 relative">
             <h1 className='text-5xl pl-8 pb-9'>Fun facts about React</h1>
             <ul className="pl-16 flex flex-col gap-3 text-xl list-disc marker:text-cyan-300 marker:text-2xl">
               <li>Was first released in 2013</li>
@@ -23,6 +23,10 @@ const Navigation = () => {
               <li>Is maintained by Meta</li>
               <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
+            <div className='absolute right-0 top-1/2'> 
+              <img src={require("./reactjs-icon 2.png")} alt=""/>
+            </div>
+            
           </div>
           
         </div>
