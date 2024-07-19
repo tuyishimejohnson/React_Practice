@@ -6,7 +6,7 @@ const Navigation = () => {
         <div className="bg-gray-800 w-[40%] m-auto text-white items-center h-screen my-56 rounded-xl">
           <div className='flex items-center justify-between px-8 py-10 bg-neutral-800 rounded-t-xl'>
             <nav className="flex gap-4">
-            <img src={require('./reactjs-icon.png')} alt="" className='w-9'/>
+            <img src={require('./images/reactjs-icon.png')} alt="" className='w-9'/>
               <h1 className='text-3xl font-bold text-cyan-300'>ReactFacts</h1>
             </nav>
 
@@ -24,7 +24,7 @@ const Navigation = () => {
               <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
             <div className='absolute right-0 top-1/2'> 
-              <img src={require("./reactjs-icon 2.png")} alt=""/>
+              <img src={require("./images/reactjs-icon 2.png")} alt=""/>
             </div>
             
           </div>
