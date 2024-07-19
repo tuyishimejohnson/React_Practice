@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons/faSquareTwitter'
@@ -26,8 +26,8 @@ const BusinessCard = () => {
                     </div>
 
                     <div className='flex gap-8 items-center justify-center px-10'>
-                        <button className='bg-white border-none px-10 py-3 rounded-md'><FontAwesomeIcon icon={faEnvelope} />  Email</button>
-                        <button className='bg-blue-400 border-none px-10 py-3 rounded-md text-white'><FontAwesomeIcon icon={faLinkedinIn} />  LinkedIn</button>
+                        <button className='bg-white border-none px-10 py-3 rounded-md font-semibold'><FontAwesomeIcon icon={faEnvelope} />  Email</button>
+                        <button className='bg-blue-400 border-none px-10 py-3 rounded-md text-white font-semibold'><FontAwesomeIcon icon={faLinkedin} />  LinkedIn</button>
                     </div>
 
                     <div className='px-14'>
