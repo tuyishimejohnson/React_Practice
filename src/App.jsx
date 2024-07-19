@@ -1,15 +1,13 @@
 import "./App.css";
 import "./index.css";
-import "./home.jsx"
-import Home from "./home.jsx";
-import Practice from "./practice.jsx";
+
+import Navigation from "./navigation.jsx";
 
 function App() {
 
   return (
       <div>
-        < Home />
-        < Practice />
+        < Navigation />
       </div>
   );
 }
