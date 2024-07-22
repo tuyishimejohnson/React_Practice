@@ -4,6 +4,9 @@ import BusinessCard from "./businessCard.jsx";
 import Navigation from "./navigation.jsx";
 import AirBnB from "./airBnB.jsx";
 import Contacts from "./contacts.jsx";
+import TravelJourney from "./travelJourney.jsx";
+import data from "./data.jsx";
+
 
 function App() {
   const newArr = [
@@ -45,10 +48,12 @@ function App() {
 
   return (
       <div>
-        < Navigation />
+      {/*   < Navigation />
         < BusinessCard />
         < AirBnB />
-        {result}
+        { result } */}
+
+        < TravelJourney />
 
       </div>
   );
