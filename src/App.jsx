@@ -9,39 +9,19 @@ import data from "./data.jsx";
 
 
 function App() {
-  const newArr = [
-    {
-        name:"Johnson",
-         phone:"(212) 555-1234",
-         email:"j.arobase@gmail.com"
-    },
-      
-    {
-      name:"Tuyishime",
-      phone:"31431953-5432",
-       email:"adflajfn@gmail.com",
-    },
-
-    {
-         name:"Qween", 
-         phone:"4543193-5432", 
-         email:"adfaldkigali@gmail.com"
-    },
-
-    {
-      name:"King", 
-      phone:"1453753-5432",
-       email:"adggfjfn@yahoo.fr"
-    }
-  ]
+  
 
 
-  const result = newArr.map(item => {
+
+  const result = data.map(item => {
     return (
-      < Contacts 
-          name={item.name}
-          phone={item.phone}
-          email={item.email}
+      < TravelJourney 
+          location={item.location}
+          title={item.title}
+          startdate={item.startDate}
+          enddate={item.endDate}
+          paragraph={item.description}
+          image={item.imageUrl}
       />
     )
   })
@@ -53,8 +33,8 @@ function App() {
         < AirBnB />
         { result } */}
 
-        < TravelJourney />
-
+        
+        {result}
       </div>
   );
 }
