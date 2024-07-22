@@ -6,6 +6,7 @@ import AirBnB from "./airBnB.jsx";
 import TravelJourney from "./travelJourney.jsx";
 import data from "./data.jsx";
 import Header from "./header.jsx";
+import MemeGenerator from "./memeGenerator.jsx";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         < AirBnB />
         < Header />
         { result }
+        < MemeGenerator />
       </div>
   );
 }
