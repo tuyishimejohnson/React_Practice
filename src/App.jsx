@@ -3,16 +3,13 @@ import "./index.css";
 import BusinessCard from "./businessCard.jsx";
 import Navigation from "./navigation.jsx";
 import AirBnB from "./airBnB.jsx";
-import Contacts from "./contacts.jsx";
 import TravelJourney from "./travelJourney.jsx";
 import data from "./data.jsx";
+import Header from "./header.jsx";
 
 
 function App() {
   
-
-
-
   const result = data.map(item => {
     return (
       < TravelJourney 
@@ -28,13 +25,11 @@ function App() {
 
   return (
       <div>
-      {/*   < Navigation />
+        < Navigation />
         < BusinessCard />
         < AirBnB />
-        { result } */}
-
-        
-        {result}
+        < Header />
+        { result }
       </div>
   );
 }
