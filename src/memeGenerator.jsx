@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import memeData from './memeData'
 
 const MemeGenerator = () => {
+    
+    let arrayData = memeData.data.memes
+    const urls = arrayData.map(item => item.url)
+    const [memeImage, setMemeImage] = useState("")
+
+    const getUrls = () => {
+        const randomIndex = Math.floor(Math.random() * urls.length)
+        let item = urls[randomIndex]
+        setMemeImage(item)
+}   
   return (
     <>
-        <div className='w-[40%] m-auto mt-36'>
+        <div className='w-[40%] m-auto mt-36 h-80'>
             <div className='flex bg-gradient-to-r from-violet-700 to-purple-500 text-white items-center justify-between px-6 py-3'>
                 <div className='flex items-center gap-3'>
                     <img src={require("./images/Troll Face.png")} alt="" className='w-16'/>
@@ -18,15 +29,18 @@ const MemeGenerator = () => {
             <div className='grid grid-cols-2 py-10 gap-5 px-7'>
                 <div>
                     <h1 className='pt'>Top text</h1>
-                    <input type="text" placeholder='First text' className='border border-black w-full'/>
+                    <input type="text" placeholder='First text' className='border border-black w-full pl-3 py-3 rounded-md'/>
                 </div> 
                 <div>
                     <h1>Bottom text</h1>
-                    <input type="text" placeholder='Second text' className='border border-black w-full'/>
+                    <input type="text" placeholder='Second text' className='border border-black w-full pl-3 py-3 rounded-md'/>
                 </div>
             </div>
             
-            <button className='bg-gradient-to-r from-violet-700 to-purple-500 text-white px-5 py-2 w-full rounded-md'>Get a new meme image  🖼</button>
+            <button className='bg-gradient-to-r from-violet-700 to-purple-500
+             text-white px-5 py-2 w-full rounded-md' onClick={getUrls}>Get a new meme image  🖼</button>
+
+             <img src={memeImage} alt="images" className='m-auto px-7 py-10'/>
         </div>
     </>
   )
