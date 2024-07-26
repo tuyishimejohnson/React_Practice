@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
 
 
 
 
 const MenuList = (props) => {
+    const [favorite, setIsFavorite] = useState("#e5e7eb")
+    let styles = {
+        color: favorite ? "#e5e7eb" : "red"
+    }
+
+    const checkFavorite = () => {
+        setIsFavorite(prevState => !prevState)
+    }
+
   return (
-    
     <div className='w-[40%] m-auto my-10'>
         <div className='border rounded-lg border-gray-400 flex'>
             <div className='w-2/5'>
@@ -19,7 +27,7 @@ const MenuList = (props) => {
             </div>
             
             <span className='font-bold flex flex-col justify-center'>{props.price}</span>
-            <span className='pt-4 flex'>< FontAwesomeIcon icon={faHeart} className='text-3xl'/></span>
+            <span className='pt-4 flex'>< FontAwesomeIcon icon={faHeart} className='text-3xl' style={styles} onClick={checkFavorite} /></span>
         </div>
     </div>
   )

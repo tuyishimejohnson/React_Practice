@@ -40,7 +40,7 @@ function App() {
         image={food.foodImage}
         price={food.price}
         favorite={food.isFavorite}
-        
+                
         />
       )
     })
