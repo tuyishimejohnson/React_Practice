@@ -11,6 +11,7 @@ import Star from "./star.jsx"
 import MenuList from "./MenuList.jsx";
 import foodList from "./foodList.jsx";
 import Title from './title'
+import Forms from "./forms.jsx";
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
 
         < Title />
         { foods }   
+        < Forms />
       </div>
   );
 }

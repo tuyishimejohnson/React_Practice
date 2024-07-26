@@ -26,7 +26,7 @@ const MenuList = (props) => {
                 <p>{props.description}</p>
             </div>
             
-            <span className='font-bold flex flex-col justify-center'>{props.price}</span>
+            <span className='font-bold flex flex-col justify-center'>{props.price} EURO</span>
             <span className='pt-4 flex'>< FontAwesomeIcon icon={faHeart} className='text-3xl' style={styles} onClick={checkFavorite} /></span>
         </div>
     </div>
