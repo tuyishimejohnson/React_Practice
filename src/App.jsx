@@ -9,6 +9,8 @@ import Header from "./header.jsx";
 import MemeGenerator from "./memeGenerator.jsx";
 import Star from "./star.jsx"
 import MenuList from "./MenuList.jsx";
+import foodList from "./foodList.jsx";
+import Title from './title'
 
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
   const result = data.map(item => {
     return (
       < TravelJourney 
-          location={item.location}
+      location={item.location}
           title={item.title}
           startdate={item.startDate}
           enddate={item.endDate}
@@ -27,7 +29,21 @@ function App() {
       />
     )
   })
-
+  
+  
+  
+  const foods = foodList.map(food => {
+    return (
+      < MenuList 
+      itemName={food.itemName}
+        description={food.description}
+        image={food.foodImage}
+        price={food.price}
+        favorite={food.isFavorite}
+        
+        />
+      )
+    })
 
   return (
       <div>
@@ -37,8 +53,10 @@ function App() {
         < Header />
         { result }
         < MemeGenerator />
-        < Star darkMode={true} on={true}/> 
-        < MenuList />       
+        < Star darkMode={true} on={true}/>   
+
+        < Title />
+        { foods }   
       </div>
   );
 }
