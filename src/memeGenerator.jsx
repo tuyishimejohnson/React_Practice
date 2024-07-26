@@ -4,11 +4,7 @@ import memeData from './memeData'
 const MemeGenerator = () => {    
     let arrayData = memeData.data.memes
     const urls = arrayData.map(item => item.url)
-    /* const [memeImage, setMemeImage] = useState("") */
-
     
-
-
     const [meme, setMeme] = useState({
         topText:"",
         bottomText:"",
@@ -56,8 +52,10 @@ const MemeGenerator = () => {
             </div>
             <button className='bg-gradient-to-r from-violet-700 to-purple-500
              text-white px-5 py-2 w-full rounded-md' onClick={getUrls}>Get a new meme image  🖼</button>
-
-             <img src={meme.randomImage} alt="images" className='m-auto px-7 py-10'/>
+            <div className='w-2/3 h-2/3 object-cover m-auto my-10'>
+                <img src={meme.randomImage} alt="images" className='w-full h-full'/>
+            </div>
+             
         </div>
     </>
   )
