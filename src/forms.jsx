@@ -17,16 +17,17 @@ const Forms = () => {
         }))
     }
 
-    const handleSubmit = (event) => {
-        console.log("Shiii!")
+    
+    const [names, setNames] = useState("")
+    const changes = (e) => {
+        setNames(e.target.value)
     }
- 
   return (
     <div className='w-[40%] m-auto my-10'>
         <h1>Use of forms in React</h1>
 
 
-        <form onSubmit={handlSubmit}>
+        <form>
 
         <input type="text" name="firstName"  placeholder='First name' onChange={handleInput} value={name.firstName}/>
         <input type="text" name="lastName" placeholder='Last name' onChange={handleInput} value={name.lastName}/>
@@ -52,6 +53,12 @@ const Forms = () => {
         <button>Submit</button>
         </form>
 
+
+        <form action="">
+            <label htmlFor="">First Name</label>
+            <input type="text" value={names}/>
+            onChange={changes}
+        </form>
         
     </div>
   )
