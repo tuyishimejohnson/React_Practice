@@ -11,13 +11,10 @@ const MemeGenerator = () => {
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
 
-    
-
-    const [allMemeImages, setAllMemeImages] = useState(urls)
 
     const getUrls = () => {
-        const randomIndex = Math.floor(Math.random() * allMemeImages.length)
-        let item = allMemeImages[randomIndex]
+        const randomIndex = Math.floor(Math.random() * urls.length)
+        let item = urls[randomIndex]
         setMeme(prevState => ({
             ...prevState,
             randomImage: item 
