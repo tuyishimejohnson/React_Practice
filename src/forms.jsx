@@ -6,14 +6,15 @@ const Forms = () => {
                                     lastName:"", 
                                     email:"", 
                                     comments:"",
-                                    isChecked: true,
+                                    isChecked: false,
                                     favoriteColor: ""
                                 })
 
     const handleInput = (event) => {
+        const {type, value, checked} = event.target
         setName(prevState => ({
             ...prevState,
-            [event.target.name]: event.target.value
+            [name]: type === "checked" ? checked : value
         }))
     }
 
@@ -39,7 +40,7 @@ const Forms = () => {
             onChange={handleInput}
         />
 
-        <input type="checkbox" checked={name.isChecked} id='isChecked'/>
+        <input type="checkbox" checked={name.isChecked} onChange={handleInput} id='isChecked'/>
         <label htmlFor="isChecked">Is it Y?</label>
         <select name="favoriteColor" id="" value={name.favoriteColor} onChange={handleInput}>
             <option value="red">-- Choose --</option>
