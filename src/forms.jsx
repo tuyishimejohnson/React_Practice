@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Forms = () => {
 
@@ -23,6 +23,21 @@ const Forms = () => {
     const changes = (e) => {
         setNames(e.target.value)
     }
+
+    useEffect(() => {
+        let count = 10
+        
+        for(let i  = count; i >= 0; i--) {
+
+            setTimeout(() => {
+
+                console.log(`Time remaining: ${i}`)
+
+            }, (count - i) * 1000);
+}
+
+    }, [])
+
   return (
     <div className='w-[40%] m-auto my-10'>
         <h1>Use of forms in React</h1>

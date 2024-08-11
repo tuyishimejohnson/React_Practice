@@ -32,7 +32,7 @@ const MemeGenerator = () => {
     }
  
     useEffect(() => {
-        fetch("https://api.imgflip.com/get_memes")
+        fetch(`${meme.randomImage}`)
         .then(res => res.json())
         .then(data => console.log(data.data.memes))
     }, [])
@@ -66,16 +66,12 @@ const MemeGenerator = () => {
             </div>
             <button className='bg-gradient-to-r from-violet-700 to-purple-500
              text-white px-5 py-2 w-full rounded-md' onClick={getUrls}>Get a new meme image  🖼</button>
-            <div className='relative w-2/3 h-2/3 object-cover m-auto my-10'>
-                <img src={meme.randomImage} alt="images" className='w-full h-full relative'/>
+            <div className='relative w-3/4 h-3/4 m-auto my-10'>
+                <img src={meme.randomImage} alt="images" className='w-full h-full relative object-cover'/>
                 <p className='absolute top-2 left-1/2 -translate-x-1/2 text-2xl text-white font-semibold uppercase'>{meme.topText}</p>
                 <p className='absolute text-2xl left-1/2 bottom-2 -translate-x-1/2 text-white font-semibold uppercase'>{meme.bottomText}</p>
-
             </div>
 
-            
-            
-             
         </div>
     </>
   )

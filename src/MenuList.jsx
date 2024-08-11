@@ -12,7 +12,7 @@ const MenuList = (props) => {
     }
 
     const checkFavorite = () => {
-        setIsFavorite(prevState => !prevState)
+        setIsFavorite(!favorite)
     }
 
   return (
